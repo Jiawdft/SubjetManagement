@@ -1,6 +1,6 @@
-package fr.isep.core.student;
+package fr.isep.sujetMng.core.student;
 
-import fr.isep.core.teacher.Subject;
+import fr.isep.sujetMng.core.teacher.Subject;
 
 public class Student {
     private String name;

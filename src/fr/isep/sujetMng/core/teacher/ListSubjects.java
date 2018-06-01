@@ -1,4 +1,4 @@
-package fr.isep.core.teacher;
+package fr.isep.sujetMng.core.teacher;
 
 import java.util.TreeMap;
 

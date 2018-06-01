@@ -1,12 +1,15 @@
-package fr.isep.ihm;
+package fr.isep.sujetMng.ihm;
 
-import fr.isep.Database;
+import fr.isep.sujetMng.Database;
+import fr.isep.sujetMng.ihm.teacher.TeacherListsIHM;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Index extends JFrame {
 
-    private JPanel indexPanel = new JPanel();
+    private JPanel mainPanel = new JPanel();
     private JLabel indexLabel = new JLabel("Je suis:");
     JButton teacherButton = new JButton("Teacher");
     JButton studentButton = new JButton("Student");
@@ -22,22 +25,35 @@ public class Index extends JFrame {
 
         //--------------Index Panel---------------------------
         indexLabel.setBounds(570,250,200,100);
-        indexPanel.add(indexLabel);
-        indexPanel.setLayout(null);
+        mainPanel.add(indexLabel);
+        mainPanel.setLayout(null);
 
         //************Teacher button settings----------------
         teacherButton.setBounds(400,400,100,50);
-        indexPanel.add(teacherButton);
+        teacherButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                TeacherListsIHM.show(database, mainPanel);
+            }
+        });
+        mainPanel.add(teacherButton);
 
         //************Teacher button settings----------------
         studentButton.setBounds(700,400,100,50);
-        indexPanel.add(studentButton);
-
-
+        studentButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //TODO student view
+                System.out.println("Student view");
+            }
+        });
+        mainPanel.add(studentButton);
 
         //--------------display frame------------------
-        this.setContentPane(indexPanel);
+        this.setContentPane(mainPanel);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
+
+
 }

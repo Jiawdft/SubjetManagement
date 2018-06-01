@@ -1,7 +1,7 @@
-package fr.isep;
+package fr.isep.sujetMng;
 
-import fr.isep.core.student.Student;
-import fr.isep.core.teacher.ListSubjects;
+import fr.isep.sujetMng.core.student.Student;
+import fr.isep.sujetMng.core.teacher.ListSubjects;
 
 import java.util.ArrayList;
 import java.util.List;

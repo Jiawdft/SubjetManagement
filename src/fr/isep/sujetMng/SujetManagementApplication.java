@@ -1,6 +1,6 @@
-package fr.isep;
+package fr.isep.sujetMng;
 
-import fr.isep.ihm.Index;
+import fr.isep.sujetMng.ihm.Index;
 
 public class SujetManagementApplication {
     public static void main(String[] args) {
