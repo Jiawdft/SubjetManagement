@@ -3,7 +3,6 @@ package fr.isep.ihm;
 import fr.isep.Database;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class Index extends JFrame {
 
