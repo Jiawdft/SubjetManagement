@@ -20,6 +20,7 @@ public class Subject {
         this.listStudentSecondChoice = listStudentSecondChoice;
     }
 
+
     public String getName() {
         return name;
     }

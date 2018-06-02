@@ -1,6 +1,6 @@
 package fr.isep.sujetMng;
 
-import fr.isep.sujetMng.ihm.Index;
+import fr.isep.sujetMng.ihm.MainFrame;
 
 public class SujetManagementApplication {
     public static void main(String[] args) {
@@ -8,6 +8,6 @@ public class SujetManagementApplication {
         Database database = new Database();
 
         //----------Run application------------
-        Index run = new Index(database);
+        MainFrame run = new MainFrame(database);
     }
 }
